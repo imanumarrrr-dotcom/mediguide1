@@ -1,5 +1,5 @@
 """MediGuide theme: dark/light base + 5 accent palettes, with a colour-wipe transition on every change."""
-from .config import ACCENTS
+from config import ACCENTS
 
 PAL = {
     "Dark": dict(bg="#090b15", bg2="#121631", card="rgba(255,255,255,0.055)", border="rgba(255,255,255,0.11)",
