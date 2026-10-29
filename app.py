@@ -9,15 +9,15 @@ import plotly.graph_objects as go
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 
-from src.cache_manager import cache_info, clear_cache, configure_cache
-from src.chains import (build_assessment_chain, build_llm, message_demo, run_assessment, stream_chat,
+from cache_manager import cache_info, clear_cache, configure_cache
+from chains import (build_assessment_chain, build_llm, message_demo, run_assessment, stream_chat,
                         stream_narrative, transcribe_audio, validate_key)
-from src.config import (ACCENTS, APP_ICON, APP_NAME, CACHE_OPTIONS, DEFAULT_MODEL, DISCLAIMER, DURATIONS,
+from config import (ACCENTS, APP_ICON, APP_NAME, CACHE_OPTIONS, DEFAULT_MODEL, DISCLAIMER, DURATIONS,
                         EMERGENCY_NUMBERS, GENDERS, LANGUAGES, MODEL_OPTIONS, RTL_LANGUAGES, SCENARIOS,
                         SYMPTOMS, TAGLINE, URGENCY_COLORS, env_api_key)
-from src.prompts import PATIENT_PROMPT, build_inputs
-from src.theme import inject_css, plotly_layout
-from src.utils import (LEVELS, crisis_check, fallback_assessment, parse_age, parse_assessment, report_markdown,
+from prompts import PATIENT_PROMPT, build_inputs
+from theme import inject_css, plotly_layout
+from utils import (LEVELS, crisis_check, fallback_assessment, parse_age, parse_assessment, report_markdown,
                        rule_urgency)
 
 st.set_page_config(page_title=f"{APP_NAME} — Symptom Guidance", page_icon=APP_ICON, layout="wide")
