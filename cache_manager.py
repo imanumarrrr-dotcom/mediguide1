@@ -10,7 +10,7 @@ from langchain_community.cache import SQLiteCache
 from langchain_core.caches import InMemoryCache
 from langchain_core.globals import set_llm_cache
 
-from .config import SQLITE_PATH
+from config import SQLITE_PATH
 
 _MEMORY_CACHE = InMemoryCache()  # module-level singleton so Streamlit reruns do not wipe it
 
