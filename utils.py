@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime
 
-from .config import DISCLAIMER, LONG_DURATIONS
+from config import DISCLAIMER, LONG_DURATIONS
 
 LEVELS = ["LOW", "MEDIUM", "HIGH", "EMERGENCY"]
 
