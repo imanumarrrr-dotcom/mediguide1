@@ -5,7 +5,7 @@ import warnings
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
-from .prompts import ASSESSMENT_CHAT_TEMPLATE, CHAT_TEMPLATE, JSON_SCHEMA, NARRATIVE_CHAT_TEMPLATE, SYSTEM_PROMPT
+from prompts import ASSESSMENT_CHAT_TEMPLATE, CHAT_TEMPLATE, JSON_SCHEMA, NARRATIVE_CHAT_TEMPLATE, SYSTEM_PROMPT
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 try:  # LLMChain lives in `langchain` 0.3; in 1.x it moved to `langchain_classic`
