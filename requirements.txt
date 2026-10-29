@@ -1,0 +1,9 @@
+streamlit>=1.50
+langchain>=0.3,<0.4
+langchain-core>=0.3,<0.4
+langchain-openai>=0.2,<0.4
+langchain-community>=0.3,<0.4
+openai>=1.40
+python-dotenv>=1.0
+plotly>=5.20
+pandas>=2.0
